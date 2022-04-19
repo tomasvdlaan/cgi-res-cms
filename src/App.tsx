@@ -1,24 +1,63 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import BuildingEdit from "./Pages/buildings/BuildingEdit";
+import BuildingOverview from "./Pages/buildings/BuildingOverview";
+import Layout from "./Pages/Layout";
+import PeripheralEdit from "./Pages/Peripherals/PeripheralEdit";
+import PeripheralOverview from "./Pages/Peripherals/PeripheralOverview";
+import PeripheralTypeEdit from "./Pages/PeripheralTypes/PeripheralTypeEdit";
+import PeripheralTypeOverview from "./Pages/PeripheralTypes/PeripheralTypeOverview";
+import ReservationEdit from "./Pages/reservations/ReservationEdit";
+import ReservationOverview from "./Pages/reservations/ReservationOverview";
+import Table from "./Pages/Table";
+import UserOverview from "./Pages/User/UserOverview";
+import UserProfile from "./Pages/User/UserProfile";
+import WorkspaceEdit from "./Pages/workspaces/WorkspaceEdit";
+import WorkspaceOverview from "./Pages/workspaces/WorkspaceOverview";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-gray-100 min-h-screen">
+      <BrowserRouter>
+        <Layout />
+
+        <Routes>
+          <Route path="/buildings" element={<BuildingOverview />} />
+          <Route path="/buildings/new" element={<BuildingEdit />} />
+          <Route path="/buildings/:id" element={<BuildingEdit />} />
+
+          <Route path="/workspaces" element={<WorkspaceOverview />} />
+          <Route path="/workspaces/new" element={<WorkspaceEdit />} />
+          <Route path="/workspaces/:id" element={<WorkspaceEdit />} />
+
+          <Route
+            path="/peripherals/categories"
+            element={<PeripheralTypeOverview />}
+          />
+          <Route
+            path="/peripherals/categories/new"
+            element={<PeripheralTypeEdit />}
+          />
+          <Route
+            path="/peripherals/categories/:id"
+            element={<PeripheralTypeEdit />}
+          />
+
+          <Route path="/peripherals" element={<PeripheralOverview />} />
+          <Route path="/peripherals/new" element={<PeripheralEdit />} />
+          <Route path="/peripherals/:id" element={<PeripheralEdit />} />
+
+          <Route path="/reservations" element={<ReservationOverview />} />
+          <Route path="/reservations/new" element={<ReservationEdit />} />
+          <Route path="/reservations/:id" element={<ReservationEdit />} />
+
+          <Route path="/users" element={<UserOverview />} />
+
+          <Route path="/profile" element={<UserProfile />} />
+
+          <Route path="/table" element={<Table />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
