@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import DateInput from "../../Components/DateInput";
 import EntitySelect from "../../Components/EntitySelect";
 import TextInput from "../../Components/TextInput";
-import { Workspace } from "../workspaces/WorkspaceEntity";
+import { Workspace } from "../Workspaces/WorkspaceEntity";
 import { Reservation } from "./ReservationEntity";
 
 function ReservationEdit() {

@@ -1,5 +1,5 @@
 import { BaseEntity } from "../../Helper/BaseEntity";
-import { Building } from "../buildings/BuildingEntity";
+import { Building } from "../Buildings/BuildingEntity";
 
 export class Workspace extends BaseEntity {
   title?: string;

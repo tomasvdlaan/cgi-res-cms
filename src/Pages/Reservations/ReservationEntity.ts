@@ -1,5 +1,5 @@
 import { BaseEntity } from "../../Helper/BaseEntity";
-import { Workspace } from "../workspaces/WorkspaceEntity";
+import { Workspace } from "../Workspaces/WorkspaceEntity";
 
 export class Reservation extends BaseEntity {
   start?: Date;

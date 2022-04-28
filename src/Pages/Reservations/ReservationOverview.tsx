@@ -1,3 +1,7 @@
+import Menu from "../../Components/Menu";
+import Overview from "../../Components/Overview";
+import PopUp from "../../Components/PopUp";
+
 import moment from "moment";
 import React, { useEffect, useState } from "react";
 import { Reservation } from "./ReservationEntity";
@@ -95,6 +99,10 @@ function ReservationOverview() {
         </div>
       </div>
     </div>
+
+
+
+
   );
 }
 

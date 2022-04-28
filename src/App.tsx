@@ -1,19 +1,19 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import BuildingEdit from "./Pages/buildings/BuildingEdit";
-import BuildingOverview from "./Pages/buildings/BuildingOverview";
+import BuildingEdit from "./Pages/Buildings/BuildingEdit";
+import BuildingOverview from "./Pages/Buildings/BuildingOverview";
 import Layout from "./Pages/Layout";
 import PeripheralEdit from "./Pages/Peripherals/PeripheralEdit";
 import PeripheralOverview from "./Pages/Peripherals/PeripheralOverview";
 import PeripheralTypeEdit from "./Pages/PeripheralTypes/PeripheralTypeEdit";
 import PeripheralTypeOverview from "./Pages/PeripheralTypes/PeripheralTypeOverview";
-import ReservationEdit from "./Pages/reservations/ReservationEdit";
-import ReservationOverview from "./Pages/reservations/ReservationOverview";
+import ReservationEdit from "./Pages/Reservations/ReservationEdit";
+import ReservationOverview from "./Pages/Reservations/ReservationOverview";
 import Table from "./Pages/Table";
 import UserOverview from "./Pages/User/UserOverview";
 import UserProfile from "./Pages/User/UserProfile";
-import WorkspaceEdit from "./Pages/workspaces/WorkspaceEdit";
-import WorkspaceOverview from "./Pages/workspaces/WorkspaceOverview";
+import WorkspaceEdit from "./Pages/Workspaces/WorkspaceEdit";
+import WorkspaceOverview from "./Pages/Workspaces/WorkspaceOverview";
 
 function App() {
   return (
