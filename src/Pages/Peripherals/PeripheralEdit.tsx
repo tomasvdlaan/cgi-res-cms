@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import EntitySelect from "../../Components/EntitySelect";
 import TextInput from "../../Components/TextInput";
-import { Building } from "../buildings/BuildingEntity";
+import { Building } from "../Buildings/BuildingEntity";
 import { Peripheral } from "./PeripheralEntity";
 
 function PeripheralEdit() {
